@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Door : MonoBehaviour
@@ -9,7 +7,7 @@ public class Door : MonoBehaviour
     public void Interact()
     {
         Debug.Log("interact the door");
-        _animator.SetBool("IsOpen", !isOpen);
         isOpen = !isOpen;
+        _animator.SetBool("IsOpen", isOpen);
     }
 }
